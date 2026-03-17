@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    // Environment Settings
+    "module": "nodenext", //nodenext
+    "target": "ES6", //esnext
+    "moduleResolution": "nodenext",
+    "lib": ["ES6"],
+    "types": ["node"],
+    // File Layout
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "resolveJsonModule": true,
+    "sourceMap": true,
+
+    "strict": true,
+    "skipLibCheck": true,
+    "verbatimModuleSyntax": false
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
