@@ -12,7 +12,7 @@ export const getUserProfile = async (
     if (!isValidObjectId(userId)) {
       return errorResponse(res, 400, "userId is required or invalid.");
     }
-    const user: any = await findUser({ _id: userId });
+    const user = await findUser({ _id: userId });
 
     if (!user) {
       return errorResponse(res, 404, "This user is not found.");

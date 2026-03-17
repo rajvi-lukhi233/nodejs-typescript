@@ -14,7 +14,7 @@ export const updateUserProfile = async (
       return errorResponse(res, 400, "userId is required or invalid.");
     }
     if (email) {
-      const existUser = await findUser({ email });
+      const existUser = await findUser({ email }, { _id: 1 });
       if (existUser) {
         return errorResponse(
           res,
